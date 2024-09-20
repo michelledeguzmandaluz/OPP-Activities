@@ -2,7 +2,7 @@ public class Activity{
 
 public static void main(String[] args) {
     Dog fatherDog = new Dog();
-    fatherDog.setName("Aron");
+    fatherDog.setName("Charlie");
     fatherDog.bark();
     
     Dog puppy1 = new Dog();
