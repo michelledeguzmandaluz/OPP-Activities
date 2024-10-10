@@ -1,42 +1,23 @@
-public class Activity{
-}
-
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
 
-      Dog edog = new Dog(); 
-      edog.SetName("Harvey");
-      edog.isMale = true;   
-      edog.NoOfPuppies(3); 
+    Dog dog = new Dog();
+        dog.setName("Harvey");
+    System.out.println("Dog name: " + dog.showName());
 
-      Dog edog1 = new Dog();
-      edog1.SetName("Mike");
-      edog1.isMale = true;
+        dog.setNumPuppies(3);
+    System.out.println("Number of puppies: " + dog.showPuppies());
 
-      Dog edog2 = new Dog();
-      edog2.SetName("Ken");
-      edog2.isMale = true;
+    System.out.println(dog.isMale = true);
 
-      edog.addPuppies(edog1);
-      edog.addPuppies(edog2);
+    Dog[] puppies = {
+        new Dog().setName("Whitey"),
+        new Dog().setName("Bubby"),
+        new Dog().setName("Brownie"),
+    };
 
-      edog1.ShowName();
-      edog2.ShowName();
-
-      edog1.bark();
-      edog2.bark();
-
-      edog.ShowNoOfPuppies();
-      edog.ShowAllPuppies();
-       
-  
-
-
-
-
-
-
-
-    }       
-    
+        dog.setPuppies(puppies);
+        dog.showPuppyNames();
+        
+    }
 }
